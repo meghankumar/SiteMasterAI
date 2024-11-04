@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Building Constructor with Material Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SiteMaster with AI</h1>
+        
+        <label for="landSize">Enter your land size (in square meters):</label>
+        <input type="number" id="landSize" placeholder="Enter the land size.." required>
+
+        <label for="buildingType">Select type of building:</label>
+        <select id="buildingType">
+            <option value="house">Single Family House</option>
+            <option value="duplex">Duplex</option>
+            <option value="apartment">Apartment Complex</option>
+            <option value="commercial">Commercial Building</option>
+        </select>
+
+        <label for="roomType">Select room for Vasthu suggestions:</label>
+        <select id="roomType">
+            <option value="mainDoor">Main Door</option>
+            <option value="bedroom">Bedroom</option>
+            <option value="livingRoom">Living Room</option>
+            <option value="kitchen">Kitchen</option>
+            <option value="bathroom">Bathroom</option>
+        </select>
+
+        <label for="soilType">Select soil type for analysis:</label>
+        <select id="soilType">
+            <option value="loamy">Loamy Soil (Medium Bearing Capacity)</option>
+            <option value="rocky">Rocky Soil (High Bearing Capacity)</option>
+            <option value="sandy">Sandy Soil (Medium Bearing Capacity)</option>
+            <option value="clay">Clay Soil (Low to Medium Bearing Capacity)</option>
+        </select>
+
+        <h2>Material Calculator</h2>
+        <label for="length">Length (m):</label>
+        <input type="number" id="length" placeholder="Length in meters" required>
+        
+        <label for="width">Width (m):</label>
+        <input type="number" id="width" placeholder="Width in meters" required>
+
+        <label for="floors">Number of Floors:</label>
+        <input type="number" id="floors" placeholder="Number of floors" min="1" required>
+
+        <button id="suggestBtn">Get Suggestions</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
